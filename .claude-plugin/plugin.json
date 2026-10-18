@@ -18,8 +18,8 @@
   "skills": [
     "./skills/00-scaffold/setup-spike-engineer-flow",
     "./skills/03-impl/refactor-port",
-    "./skills/aux/newbie",
-    "./skills/aux/cn_trans",
-    "./skills/aux/git-commit"
+    "./skills/tools/newbie",
+    "./skills/tools/cn_trans",
+    "./skills/tools/git-commit"
   ]
 }

@@ -21,7 +21,7 @@
 | 4 验证 | `skills/04-verify` | `verify`（静态 + 单测）+ `log-analyze`（离线日志分析）+ `hw-test`（实机验证） |
 | 5 评审 | `skills/05-review` | `code-review`（双轴：规范 + 规格） |
 | 6 文档 | `skills/06-docs` | datasheet 摘要 / 寄存器手册 / 模块说明 |
-| 辅助 | `skills/aux` | `newbie` ✅ + `cn_trans` ✅ + `git-commit` ✅ + `build-flash` + `protocol-tools` |
+| 辅助 | `skills/tools` | `newbie` ✅ + `cn_trans` ✅ + `git-commit` ✅ + `build-flash` + `protocol-tools` |
 
 ## 安装
 
