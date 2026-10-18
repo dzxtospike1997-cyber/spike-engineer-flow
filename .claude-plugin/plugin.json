@@ -1,0 +1,25 @@
+{
+  "name": "spike-engineer-flow",
+  "version": "0.1.0",
+  "description": "Interview-first skill family for embedded product software: chip drivers, RTOS-aware application logic, hardware-coupled offline log analysis, standards review, and the spec-to-docs pipeline.",
+  "author": {
+    "name": "Spike"
+  },
+  "license": "MIT",
+  "keywords": [
+    "embedded",
+    "firmware",
+    "mcu",
+    "driver",
+    "rtos",
+    "hardware",
+    "code-review"
+  ],
+  "skills": [
+    "./skills/00-scaffold/setup-spike-engineer-flow",
+    "./skills/03-impl/refactor-port",
+    "./skills/aux/newbie",
+    "./skills/aux/cn_trans",
+    "./skills/aux/git-commit"
+  ]
+}

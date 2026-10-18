@@ -1,0 +1,22 @@
+{
+  "name": "spike-engineer-flow",
+  "owner": {
+    "name": "Spike"
+  },
+  "description": "Interview-first embedded firmware skills, installable as a Claude Code plugin.",
+  "plugins": [
+    {
+      "name": "spike-engineer-flow",
+      "source": "./",
+      "description": "Open-source embedded product development skills: setup interview, chip drivers, RTOS-aware logic, offline log analysis, standards review.",
+      "category": "embedded",
+      "keywords": [
+        "embedded",
+        "firmware",
+        "mcu",
+        "driver",
+        "rtos"
+      ]
+    }
+  ]
+}
