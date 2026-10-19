@@ -38,6 +38,7 @@ Ask the engineer, concisely and one question at a time, what they want to do rig
 | Want to commit | `git-commit` |
 | A term or logic is hard to understand | `newbie` |
 | Want to translate a skill doc to Chinese | `cn_trans` |
+| A hard decision or tricky problem needing several expert views | `round-table` |
 
 State the recommendation, why, and the rest of the path from there (for example: "start with `interrogate`, then `spec`, then `design`"). If the situation is ambiguous, ask one more question rather than guessing. If a routed skill is not built yet, say so and describe what it will do.
 

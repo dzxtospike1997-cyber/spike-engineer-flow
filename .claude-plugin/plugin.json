@@ -17,6 +17,7 @@
   ],
   "skills": [
     "./skills/ask-spike",
+    "./skills/round-table",
     "./skills/00-proj-cfg/proj-cfg",
     "./skills/01-spec/interrogate",
     "./skills/02-design/senior-en",
