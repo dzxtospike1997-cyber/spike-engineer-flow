@@ -17,6 +17,8 @@
   ],
   "skills": [
     "./skills/00-scaffold/setup-spike-engineer-flow",
+    "./skills/01-spec/interrogate",
+    "./skills/02-design/senior-en",
     "./skills/03-impl/refactor-port",
     "./skills/tools/newbie",
     "./skills/tools/cn_trans",
