@@ -16,7 +16,7 @@
     "code-review"
   ],
   "skills": [
-    "./skills/00-scaffold/setup-spike-engineer-flow",
+    "./skills/00-cr-proj/cr-proj",
     "./skills/01-spec/interrogate",
     "./skills/02-design/senior-en",
     "./skills/03-impl/refactor-port",

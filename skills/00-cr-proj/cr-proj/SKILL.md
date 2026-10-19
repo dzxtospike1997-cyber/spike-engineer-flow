@@ -1,5 +1,5 @@
 ---
-name: setup-spike-engineer-flow
+name: cr-proj
 description: "Interview the engineer about their embedded project and write the answers to a project context file the rest of spike-engineer-flow reads. Captures product domain, chip and vendor driver library, scheduling model (bare-metal / RTOS), build toolchain, coding standard, and log placement. Use on first setup, or whenever one of these facts changes."
 ---
 
