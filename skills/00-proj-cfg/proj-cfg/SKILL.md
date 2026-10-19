@@ -1,6 +1,6 @@
 ---
 name: proj-cfg
-description: "Interview the engineer about their embedded project and write the answers to a project context file the rest of spike-engineer-flow reads. Captures product domain, chip and vendor driver library, scheduling model (bare-metal / RTOS), build toolchain, coding standard, and log placement. Use to configure a project's spike-flow context (a new project, or one derived or modified from an existing project), and whenever one of these facts changes."
+description: "Interview the engineer about their embedded project and write the answers to a project context file the rest of spike-engineer-flow reads. Captures product domain, chip and vendor driver library, chip reference material paths, memory partition layout, scheduling model (bare-metal / RTOS), build toolchain, coding standard, and log placement. Use to configure a project's spike-flow context (a new project, or one derived or modified from an existing project), and whenever one of these facts changes."
 ---
 
 Capture the facts about an embedded project so every other spike-engineer-flow skill can read them instead of re-asking.
@@ -13,6 +13,7 @@ Interview the engineer in **rounds**, then write `.spike-engineer-flow/context.m
 
 - **Product domain** - what kind of product is this? (energy-storage BMS, motor control, IoT, medical, consumer, other.) The domain tells later skills which regulations and idioms matter; it is never a hard-coded assumption.
 - **MCU / SoC** - vendor and family (STM32, GD32, NXP, Renesas, ESP32, and so on). A project may target several; list them all.
+- **Chip reference material** - where do each chip's datasheet, reference manual, register map, and errata live? Record exact paths or URLs so `driver-dev` and `senior-en` can read them directly.
 - **Other compute** - does the project also run on Linux (C/C++) or depend on Python scripts (host tools, data processing)? If so, note their role as auxiliary.
 
 ## Round 2: firmware facts
@@ -21,6 +22,7 @@ Interview the engineer in **rounds**, then write `.spike-engineer-flow/context.m
 - **Scheduling model** - bare-metal, FreeRTOS, RT-Thread, another RTOS, or mixed. If mixed, say which parts use which.
 - **Languages** - C, C++, assembly. Assembly is for startup / interrupt / timing-critical paths unless the engineer says otherwise.
 - **Build toolchain** - Keil MDK, STM32CubeIDE, IAR, GCC + CMake/Make, other. Note the flash/debug probe (J-Link, ST-Link, and so on).
+- **Memory partition layout** - how is the chip's memory divided? Record each region (bootloader, app, config / data, RAM, and so on) with its address range and size, from the linker script or the memory map. This feeds `measure`'s partition boundary check and constrains every later design step.
 
 ## Round 3: standards and logs
 

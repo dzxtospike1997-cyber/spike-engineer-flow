@@ -24,6 +24,7 @@
     "./skills/03-impl/refactor-port",
     "./skills/tools/newbie",
     "./skills/tools/cn_trans",
-    "./skills/tools/git-commit"
+    "./skills/tools/git-commit",
+    "./skills/tools/measure"
   ]
 }

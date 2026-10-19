@@ -23,7 +23,7 @@
 | 4 验证 | `skills/04-verify` | `verify`（静态 + 单测）→ 直接 `code-review`；`log-analyze`（随时调用，查逻辑 / 找 bug）+ `hw-test`（实机验证） |
 | 5 评审 | `skills/05-review` | `code-review`（双轴：规范 + 规格） |
 | 6 文档 | `skills/06-docs` | datasheet 摘要 / 寄存器手册 / 模块说明 |
-| 辅助 | `skills/tools` | `newbie` ✅ + `cn_trans` ✅ + `git-commit` ✅ + `build-flash` + `protocol-tools` |
+| 辅助 | `skills/tools` | `newbie` ✅ + `cn_trans` ✅ + `git-commit` ✅ + `measure` ✅ + `build-flash` + `protocol-tools` |
 
 **正常流程**：`interrogate → spec → design → senior-en（评设计）→ driver-dev / app-logic → verify → code-review → docs`。`senior-en` 在 verify 前可询问是否评代码；`log-analyze` 及其它工具类 skill 随时调用，不入正常流程。
 
