@@ -6,5 +6,5 @@
 - **`cn_trans`**（已落地）：把 skill 文档翻译成简体中文，输出 `<原名>.zh.md` 到原文档同目录。
 - **`git-commit`**（已落地）：提交前分析工作区，说明功能与逻辑变化、列出将提交内容，工程师确认后才提交。
 - **`measure`**（已落地）：真实测量——从 `.map` / `size` / 栈分析读 flash / RAM 占用、最坏栈深，并做功能分区越界检查（bootloader / app / 配置区）。
-- **`build-flash`**（待建）：构建 + 可选烧录 / 调试（每次询问工程师是否需要，非必做）；需要真实资源数字时调用 `measure`。调用时临时创建 sub-agent 处理，主上下文只收结果摘要。
+- **`build-flash`**（已落地）：构建 + 可选烧录 / 调试（每次询问，非必做）；真实数字调用 `measure`；重活在临时 sub-agent 里跑，主上下文只收摘要。
 - **`protocol-tools`**（待建）：通信协议工具（CAN / I2C / SPI / UART / Modbus / Ethernet…，具体协议拷问后适配）。

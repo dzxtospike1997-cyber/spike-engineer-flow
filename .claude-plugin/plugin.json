@@ -20,11 +20,14 @@
     "./skills/round-table",
     "./skills/00-proj-cfg/proj-cfg",
     "./skills/01-spec/interrogate",
+    "./skills/01-spec/spec",
     "./skills/02-design/senior-en",
     "./skills/03-impl/refactor-port",
+    "./skills/05-review/code-review",
     "./skills/tools/newbie",
     "./skills/tools/cn_trans",
     "./skills/tools/git-commit",
-    "./skills/tools/measure"
+    "./skills/tools/measure",
+    "./skills/tools/build-flash"
   ]
 }
