@@ -16,7 +16,8 @@
     "code-review"
   ],
   "skills": [
-    "./skills/00-cr-proj/cr-proj",
+    "./skills/ask-spike",
+    "./skills/00-proj-cfg/proj-cfg",
     "./skills/01-spec/interrogate",
     "./skills/02-design/senior-en",
     "./skills/03-impl/refactor-port",

@@ -12,9 +12,11 @@
 
 ## 六段全流程
 
+> 不知道从哪开始？先问 **`ask-spike`**（路由器）——它会根据你项目的当前进度和需求，推荐从哪个 skill 开始。
+
 | 段 | 目录 | skill（计划） |
 |---|---|---|
-| 0 cr-proj（项目创建） | `skills/00-cr-proj` | `cr-proj` ✅ |
+| 0 proj-cfg（项目配置） | `skills/00-proj-cfg` | `proj-cfg` ✅ |
 | 1 规格 | `skills/01-spec` | `interrogate` ✅（拷问 + ADR + 术语表）→ `spec`（正式规格） |
 | 2 设计 | `skills/02-design` | `design`（模块 / 外设 / API 设计）→ `senior-en` ✅（设计评审 + 验证前代码评审，拷问与建议并行） |
 | 3 实现 | `skills/03-impl` | `refactor-port` ✅ + `driver-dev`（芯片驱动）+ `app-logic`（应用层） |
@@ -38,7 +40,7 @@ claude plugin install spike-engineer-flow@spike-engineer-flow
 
 ## 使用
 
-新项目先运行 `cr-proj`：它会拷问平台 / 芯片 / RTOS / 编码标准 / 日志放置方式，生成 `.spike-engineer-flow/context.md`。其余所有 skill 都读这个文件，不再重复询问；项目事实变化时重跑一次即可。
+项目接入 spike 流时先运行 `proj-cfg`（新项目，或衍生 / 修改既有项目）：它会拷问平台 / 芯片 / RTOS / 编码标准 / 日志放置方式，生成 `.spike-engineer-flow/context.md`。其余所有 skill 都读这个文件，不再重复询问；项目事实变化时重跑一次即可。
 
 ## License
 

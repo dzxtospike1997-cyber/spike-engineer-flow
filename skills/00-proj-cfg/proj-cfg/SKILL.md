@@ -1,6 +1,6 @@
 ---
-name: cr-proj
-description: "Interview the engineer about their embedded project and write the answers to a project context file the rest of spike-engineer-flow reads. Captures product domain, chip and vendor driver library, scheduling model (bare-metal / RTOS), build toolchain, coding standard, and log placement. Use on first setup, or whenever one of these facts changes."
+name: proj-cfg
+description: "Interview the engineer about their embedded project and write the answers to a project context file the rest of spike-engineer-flow reads. Captures product domain, chip and vendor driver library, scheduling model (bare-metal / RTOS), build toolchain, coding standard, and log placement. Use to configure a project's spike-flow context (a new project, or one derived or modified from an existing project), and whenever one of these facts changes."
 ---
 
 Capture the facts about an embedded project so every other spike-engineer-flow skill can read them instead of re-asking.
