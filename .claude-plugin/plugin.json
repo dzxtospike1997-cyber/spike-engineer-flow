@@ -22,12 +22,20 @@
     "./skills/01-spec/interrogate",
     "./skills/01-spec/spec",
     "./skills/02-design/senior-en",
+    "./skills/02-design/design",
+    "./skills/03-impl/driver-dev",
+    "./skills/03-impl/app-logic",
     "./skills/03-impl/refactor-port",
+    "./skills/04-verify/verify",
+    "./skills/04-verify/log-analyze",
+    "./skills/04-verify/hw-test",
     "./skills/05-review/code-review",
+    "./skills/06-docs/docs",
     "./skills/tools/newbie",
     "./skills/tools/cn_trans",
     "./skills/tools/git-commit",
     "./skills/tools/measure",
-    "./skills/tools/build-flash"
+    "./skills/tools/build-flash",
+    "./skills/tools/protocol-tools"
   ]
 }

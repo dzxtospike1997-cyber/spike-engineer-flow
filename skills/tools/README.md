@@ -7,4 +7,4 @@
 - **`git-commit`**（已落地）：提交前分析工作区，说明功能与逻辑变化、列出将提交内容，工程师确认后才提交。
 - **`measure`**（已落地）：真实测量——从 `.map` / `size` / 栈分析读 flash / RAM 占用、最坏栈深，并做功能分区越界检查（bootloader / app / 配置区）。
 - **`build-flash`**（已落地）：构建 + 可选烧录 / 调试（每次询问，非必做）；真实数字调用 `measure`；重活在临时 sub-agent 里跑，主上下文只收摘要。
-- **`protocol-tools`**（待建）：通信协议工具（CAN / I2C / SPI / UART / Modbus / Ethernet…，具体协议拷问后适配）。
+- **`protocol-tools`**（已落地）：通信协议工具（CAN / I2C / SPI / UART / Modbus / Ethernet…，先问协议再适配）——解析 / 生成帧、DBC、抓包脚本。

@@ -18,12 +18,12 @@
 |---|---|---|
 | 0 proj-cfg（项目配置） | `skills/00-proj-cfg` | `proj-cfg` ✅ |
 | 1 规格 | `skills/01-spec` | `interrogate` ✅（拷问 + ADR + 术语表）→ `spec` ✅（REQ-ID + 追溯矩阵） |
-| 2 设计 | `skills/02-design` | `design`（模块 / 外设 / API 设计）→ `senior-en` ✅（设计评审 + 验证前代码评审，拷问与建议并行） |
-| 3 实现 | `skills/03-impl` | `refactor-port` ✅ + `driver-dev`（芯片驱动）+ `app-logic`（应用层） |
-| 4 验证 | `skills/04-verify` | `verify`（静态 + 单测）→ 直接 `code-review`；`log-analyze`（随时调用，查逻辑 / 找 bug）+ `hw-test`（实机验证） |
+| 2 设计 | `skills/02-design` | `design` ✅（模块 / 外设 / API 设计）→ `senior-en` ✅（评审，拷问与建议并行） |
+| 3 实现 | `skills/03-impl` | `driver-dev` ✅ + `app-logic` ✅ + `refactor-port` ✅ |
+| 4 验证 | `skills/04-verify` | `verify` ✅（静态 + 单测 + measure）→ `code-review`；`log-analyze` ✅（随时调用）+ `hw-test` ✅（实机验证） |
 | 5 评审 | `skills/05-review` | `code-review` ✅（双轴：规范 + 规格，回填追溯矩阵） |
-| 6 文档 | `skills/06-docs` | datasheet 摘要 / 寄存器手册 / 模块说明 |
-| 辅助 | `skills/tools` | `newbie` ✅ + `cn_trans` ✅ + `git-commit` ✅ + `measure` ✅ + `build-flash` ✅ + `protocol-tools` |
+| 6 文档 | `skills/06-docs` | `docs` ✅（datasheet 摘要 / 寄存器手册 / 模块说明） |
+| 辅助 | `skills/tools` | `newbie` ✅ + `cn_trans` ✅ + `git-commit` ✅ + `measure` ✅ + `build-flash` ✅ + `protocol-tools` ✅ |
 
 **正常流程**：`interrogate → spec → design → senior-en（评设计）→ driver-dev / app-logic → verify → code-review → docs`。`senior-en` 在 verify 前可询问是否评代码；`log-analyze` 及其它工具类 skill 随时调用，不入正常流程。
 
