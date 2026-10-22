@@ -1,7 +1,7 @@
-# 00-proj-cfg 项目配置段
+# 00-proj-cfg — project config stage
 
-家族的入口：项目配置（新项目，或衍生 / 修改既有项目）。
+The family's entry point: project configuration (new project, or a derived / modified existing project).
 
-- **`proj-cfg`**（已落地）：拷问使用者（产品领域 / 芯片 / 芯片资料路径 / 分区〔flash / RAM / 栈 / no-init / 边界重叠〕/ 驱动库 / 调度模型 / 工具链 / 编码标准 / 日志放置方式），生成 `.spike-engineer-flow/context.md`，供其余所有 skill 读取。
+- **`proj-cfg`** (landed): interviews the user (product domain / chip / chip datasheet path / partitions [flash / RAM / stack / no-init / boundary overlap] / driver library / scheduling model / toolchain / coding standard / log placement), and generates `.spike-engineer-flow/context.md` for every other skill to read.
 
-其余段 skill 都不再重复询问项目事实，只读这个 context 文件。
+The other stage skills never re-ask for project facts; they only read this context file.

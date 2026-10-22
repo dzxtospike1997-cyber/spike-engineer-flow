@@ -1,12 +1,12 @@
-# 04-verify 验证段
+# 04-verify — verification stage
 
-嵌入式与硬件强耦合，无纯软件模拟，验证依赖工程师线下抓取的 artifact。
+Embedded work is tightly coupled to hardware; there is no pure-software simulation, so verification relies on the artifacts the engineer captures offline.
 
-正常流程：`verify` 之后直接进 `code-review`（05 评审段），`log-analyze` 不入正常流程。
+Normal flow: after `verify` go straight to `code-review` (the 05 review stage); `log-analyze` is not part of the normal flow.
 
-对硬件强耦合的模块，推荐走「测 → 抓取 → log-analyze 分析 → 修复 → 复测」闭环，但**不是每个模块都需要抓 log**——纯逻辑 / 算法类只走 `verify`（静态 + 单测）即可。
+For hardware-coupled modules, prefer the closed loop "test → capture → log-analyze → fix → re-test", but **not every module needs captured logs** — pure logic / algorithm modules only need `verify` (static + unit test).
 
-skill：
-- **`verify`**（已落地）：可在机器上跑的部分——静态检查 + 单元测试（先拆 host 可测 vs 必须上板），并调用 `measure` 查分区越界。开始前先询问是否调用 `senior-en` 评代码。
-- **`log-analyze`**（已落地）：**随时调用、不入正常流程**，用于验证代码逻辑、查 bug。离线分析报文 / 波形 / 日志；强制拷问 5 条 + 反向出「抓取清单」。
-- **`hw-test`**（已落地）：实机 / 硬件在环验证——规划测试、指定抓什么、引导工程师跑硬件，产出证据交给 log-analyze。
+Skills:
+- **`verify`** (landed): the part that can run on a machine — static checks + unit tests (first split host-testable vs must-run-on-board), and calls `measure` to check partition boundaries. Before starting, asks whether to call `senior-en` to review the code.
+- **`log-analyze`** (landed): **call anytime, not part of the normal flow**, for verifying code logic and finding bugs. Analyzes messages / waveforms / logs offline; a mandatory 5-question interview plus a reverse-produced "capture list".
+- **`hw-test`** (landed): on-hardware / hardware-in-the-loop verification — plans the test, specifies what to capture, guides the engineer through running the hardware, and hands the evidence to `log-analyze`.

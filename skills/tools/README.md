@@ -1,10 +1,10 @@
-# tools 辅助段
+# tools — auxiliary stage
 
-构建 / 通信 / 文档 / 讲解辅助工具。
+Build / communication / documentation / explanation helpers.
 
-- **`newbie`**（已落地）：把工程师疑惑的知识点、新术语、复杂逻辑用小白话 + 生活常见例子讲清楚，再映射回真实语境。
-- **`cn_trans`**（已落地）：把 skill 文档翻译成简体中文，输出 `<原名>.zh.md` 到原文档同目录。
-- **`git-commit`**（已落地）：提交前分析工作区，说明功能与逻辑变化、列出将提交内容，工程师确认后才提交。
-- **`measure`**（已落地）：真实测量——从 `.map` / `size` / 栈分析读 flash / RAM 占用、最坏栈深，并做功能分区越界检查（bootloader / app / 配置区）。
-- **`build-flash`**（已落地）：构建 + 可选烧录 / 调试（每次询问，非必做）；真实数字调用 `measure`；重活在临时 sub-agent 里跑，主上下文只收摘要。
-- **`protocol-tools`**（已落地）：通信协议工具（CAN / I2C / SPI / UART / Modbus / Ethernet…，先问协议再适配）——解析 / 生成帧、DBC、抓包脚本。
+- **`newbie`** (landed): explains a confusing concept, a new term, or a complex piece of logic in plain words plus an everyday example, then maps it back to the real context.
+- **`cn_trans`** (landed): translates a skill doc into Simplified Chinese, writing `<name>.zh.md` next to the original.
+- **`git-commit`** (landed): analyzes the working tree before committing, explains the functional and logical impact of the changes, lists what will be committed, and commits only after the engineer confirms.
+- **`measure`** (landed): real measurement — reads flash / RAM usage and worst-case stack depth from the `.map` / `size` / stack analysis, and checks functional partition boundaries (bootloader / app / config regions).
+- **`build-flash`** (landed): build + optional flash / debug (asked every time, never automatic); calls `measure` for the real numbers; runs in a temporary sub-agent so the main context only gets a summary.
+- **`protocol-tools`** (landed): communication protocol tools (CAN / I2C / SPI / UART / Modbus / Ethernet…, asks the protocol first, then adapts) — parse / build frames, DBC, capture scripts.

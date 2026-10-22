@@ -1,46 +1,46 @@
 # spike-engineer-flow
 
-一套开源的、**拷问式自适应**的嵌入式产品软件开发 skill 家族（Claude Code 插件）。
+An open-source, **interview-first adaptive** skill family for embedded product software development (a Claude Code plugin).
 
-覆盖嵌入式产品从需求到文档的完整生命周期，但**不做任何死板假设**：产品领域、芯片厂商与驱动库、RTOS 调度模型、编码标准、MISRA 等国际标准——全部在运行时拷问使用者后适配，而不是写死在 skill 里。因此它既能用于储能 BMS，也能用于电机控制、IoT、医疗等任何嵌入式产品。
+It covers the full lifecycle of an embedded product from requirements to documentation, but **makes no rigid assumptions**: the product domain, chip vendor and driver library, RTOS scheduling model, coding standard, and international standards such as MISRA are all adapted by interviewing the user at runtime rather than hard-coded into the skills. It therefore works as well for an energy-storage BMS as it does for motor control, IoT, medical, or any other embedded product.
 
-## 设计原则
+## Design principles
 
-- **拷问式自适应**：一切领域相关项运行时询问，不预设。
-- **事实归 agent，决策归工程师**：能从代码 / 文档查到的由 agent 自己查，关键决策（安全、时序、硬件相关）回交工程师。
-- **硬件现实**：嵌入式无法纯软件模拟，验证依赖工程师线下抓取的报文 / 波形 / 日志，agent 离线分析。
+- **Interview-first adaptive**: every domain-specific item is asked at runtime, never presumed.
+- **Facts belong to the agent, decisions to the engineer**: whatever the agent can find from code or docs it finds itself; the key decisions (safety, timing, hardware-related) go back to the engineer.
+- **Hardware reality**: embedded work cannot be simulated in software alone; verification relies on the messages / waveforms / logs the engineer captures offline, which the agent analyzes offline.
 
-## 六段全流程
+## The six-stage pipeline
 
-> **元能力**：不知道从哪开始 → **`ask-spike`**（路由器）；难题要多个专家视角讨论 → **`round-table`**（多代理圆桌辩论，收敛可靠方案）。
+> **Meta-skills**: not sure where to start → **`ask-spike`** (router); a hard problem needs several expert views → **`round-table`** (multi-agent round-table debate that converges on a robust solution).
 
-| 段 | 目录 | skill（计划） |
+| Stage | Directory | Skills |
 |---|---|---|
-| 0 proj-cfg（项目配置） | `skills/00-proj-cfg` | `proj-cfg` ✅ |
-| 1 规格 | `skills/01-spec` | `interrogate` ✅（拷问 + ADR + 术语表）→ `spec` ✅（REQ-ID + 追溯矩阵） |
-| 2 设计 | `skills/02-design` | `design` ✅（模块 / 外设 / API 设计）→ `senior-en` ✅（评审，拷问与建议并行） |
-| 3 实现 | `skills/03-impl` | `driver-dev` ✅ + `app-logic` ✅ + `refactor-port` ✅ |
-| 4 验证 | `skills/04-verify` | `verify` ✅（静态 + 单测 + measure）→ `code-review`；`log-analyze` ✅（随时调用）+ `hw-test` ✅（实机验证） |
-| 5 评审 | `skills/05-review` | `code-review` ✅（双轴：规范 + 规格，回填追溯矩阵） |
-| 6 文档 | `skills/06-docs` | `docs` ✅（datasheet 摘要 / 寄存器手册 / 模块说明） |
-| 辅助 | `skills/tools` | `newbie` ✅ + `cn_trans` ✅ + `git-commit` ✅ + `measure` ✅ + `build-flash` ✅ + `protocol-tools` ✅ |
+| 0 proj-cfg (project config) | `skills/00-proj-cfg` | `proj-cfg` ✅ |
+| 1 spec | `skills/01-spec` | `interrogate` ✅ (interview + ADR + glossary) → `spec` ✅ (REQ-ID + traceability matrix) |
+| 2 design | `skills/02-design` | `design` ✅ (module / peripheral / API design) → `senior-en` ✅ (review, grilling and advice in parallel) |
+| 3 impl | `skills/03-impl` | `driver-dev` ✅ + `app-logic` ✅ + `refactor-port` ✅ |
+| 4 verify | `skills/04-verify` | `verify` ✅ (static + unit test + measure) → `code-review`; `log-analyze` ✅ (call anytime) + `hw-test` ✅ (on-hardware verification) |
+| 5 review | `skills/05-review` | `code-review` ✅ (two axes: standard + spec, back-fills the traceability matrix) |
+| 6 docs | `skills/06-docs` | `docs` ✅ (datasheet summary / register manual / module notes) |
+| tools | `skills/tools` | `newbie` ✅ + `cn_trans` ✅ + `git-commit` ✅ + `measure` ✅ + `build-flash` ✅ + `protocol-tools` ✅ |
 
-**正常流程**：`interrogate → spec → design → senior-en（评设计）→ driver-dev / app-logic → verify → code-review → docs`。`senior-en` 在 verify 前可询问是否评代码；`log-analyze` 及其它工具类 skill 随时调用，不入正常流程。
+**Normal flow**: `interrogate → spec → design → senior-en (review design) → driver-dev / app-logic → verify → code-review → docs`. Before `verify`, `senior-en` may offer to review the code; `log-analyze` and the other tool skills are called anytime and are not part of the normal flow.
 
-## 安装
+## Install
 
-本仓库自带 `.claude-plugin/marketplace.json`，可作为一个 Claude Code 插件市场安装：
+This repository ships a `.claude-plugin/marketplace.json`, so it can be installed as a Claude Code plugin marketplace:
 
 ```bash
-claude plugin marketplace add spike-engineer-flow https://github.com/<你的账号>/spike-engineer-flow
+claude plugin marketplace add spike-engineer-flow https://github.com/<your-account>/spike-engineer-flow
 claude plugin install spike-engineer-flow@spike-engineer-flow
 ```
 
-（本地开发期也可直接把 `skills/` 下的目录软链进 `~/.claude/skills/`。）
+(During local development you can also symlink the directories under `skills/` into `~/.claude/skills/`.)
 
-## 使用
+## Usage
 
-项目接入 spike 流时先运行 `proj-cfg`（新项目，或衍生 / 修改既有项目）：它会拷问平台 / 芯片 / RTOS / 编码标准 / 日志放置方式，生成 `.spike-engineer-flow/context.md`。其余所有 skill 都读这个文件，不再重复询问；项目事实变化时重跑一次即可。
+When a project joins the spike flow, run `proj-cfg` first (new project, or a derived / modified existing project): it interviews you for the platform / chip / RTOS / coding standard / log placement, and generates `.spike-engineer-flow/context.md`. Every other skill reads that file and never asks again; re-run it when the project facts change.
 
 ## License
 

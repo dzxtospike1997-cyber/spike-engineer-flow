@@ -1,7 +1,7 @@
-# 03-impl 实现段
+# 03-impl — implementation stage
 
-代码实现与移植重构。
+Code implementation, porting, and refactoring.
 
-- **`refactor-port`**（已落地）：移植/重构功能模块——拷问要移植的模块 → 滤清原工程业务流与代码流 → 新工程重构 → 逻辑流对比 → 输出差异点（可存 doc 留档）。
-- **`driver-dev`**（已落地）：芯片驱动开发（datasheet → 官方库 API 映射 → 驱动实现），厂商无关，硬件关键决策回交工程师。
-- **`app-logic`**（已落地）：应用 / 业务层实现（状态机、通信、算法），业务规则归工程师、实现归 agent。
+- **`refactor-port`** (landed): ports / refactors a functional module — interviews for the module to port → clarifies the original project's business flow and code flow → refactors into the new project → compares the logic flow → outputs the differences (optionally saved to a doc).
+- **`driver-dev`** (landed): chip driver development (datasheet → official library API mapping → driver implementation), vendor-agnostic, with hardware-critical decisions returned to the engineer.
+- **`app-logic`** (landed): application / business-layer implementation (state machines, communication, algorithms); business rules belong to the engineer, implementation to the agent.

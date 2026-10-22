@@ -1,6 +1,6 @@
-# 02-design 设计段
+# 02-design — design stage
 
-模块 / 外设 / API 设计 + 资深评审。
+Module / peripheral / API design + senior review.
 
-- **`senior-en`**（已落地）：以资深嵌入式专家身份评审，**两个触发点**——设计后评设计书（功能边界 / 覆盖宽度 / 性能 / MCU-DSP 效率 / 堆栈 / 代码量），验证前评代码设计层面（数据结构解耦、代码与变量量、嵌套、重函数、栈深、基本效率），并调用 `measure` 评估性能与功能分区越界；拷问与建议并行。
-- **`design`**（已落地）：把 spec 落成可实现设计——模块划分、寄存器 / 外设映射、API 签名、状态机、时序约束，每个设计元素都挂 REQ-ID。
+- **`senior-en`** (landed): reviews as a senior embedded expert, at **two trigger points** — after design it reviews the design document (functional boundary / coverage breadth / performance / MCU-DSP efficiency / stack / code size), and before verify it reviews the code at the design level (data-structure decoupling, code and variable volume, nesting, heavy functions, stack depth, basic efficiency), calling `measure` to assess performance and partition boundaries; grilling and advice run in parallel.
+- **`design`** (landed): turns the spec into an implementable design — module boundaries, register / peripheral mapping, API signatures, state machines, timing constraints, each design element tied to a REQ-ID.

@@ -7,7 +7,7 @@ Break settled work into small ordered pieces before implementation, and keep eac
 
 ## 1. When to run
 
-Run after `design` (or a review's整改 list) settles what to build, and before `driver-dev` / `app-logic` / `refactor-port` start writing code. Skip when the work already fits in one session.
+Run after `design` (or a review's remediation list) settles what to build, and before `driver-dev` / `app-logic` / `refactor-port` start writing code. Skip when the work already fits in one session.
 
 ## 2. Divide into pieces
 

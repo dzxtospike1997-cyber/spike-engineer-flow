@@ -1,6 +1,6 @@
-# 01-spec 规格段
+# 01-spec — spec stage
 
-新需求的入口：先拷问澄清并记录决策与术语，再落正式规格。
+The entry for a new requirement: first interview to clarify and record decisions and terms, then write the formal spec.
 
-- **`interrogate`**（已落地）：拷问工程师把模糊需求想清楚，边问边产出 ADR + 术语表；完成后交给 spec。
-- **`spec`**（已落地）：把共享理解落成正式规格——每条需求分配 REQ-ID + 验收标准，并建 `docs/traceability.md` 追溯矩阵（`@req` / `@covers` 标注约定）。
+- **`interrogate`** (landed): interviews the engineer to think a fuzzy requirement through, producing ADRs + a glossary as it asks; hands off to `spec` when done.
+- **`spec`** (landed): turns the shared understanding into a formal spec — assigns each requirement a REQ-ID + acceptance criteria, and creates the `docs/traceability.md` matrix (with the `@req` / `@covers` annotation convention).

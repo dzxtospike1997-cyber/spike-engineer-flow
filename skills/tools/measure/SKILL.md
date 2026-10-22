@@ -13,7 +13,7 @@ Find the build output: the `.map` file, `.elf`, `.hex`/`.bin`, and the linker sc
 
 - **Flash / RAM usage** - parse the `.map` (sections, `size`, `nm`) for actual code and data size, and the Top-N largest symbols. Report used vs total against the chip's flash and RAM budget.
 - **Stack depth** - use `-fstack-usage` (GCC) or the toolchain's static stack analysis plus the call graph, for the worst-case stack per task and per ISR. Prefer a runtime stack watermark (RT-Thread `list_thread` / stack check) when it exists.
-- **Functional partition boundaries** - take the memory map (bootloader / app / config regions and their address ranges) from the linker script or the engineer, then check every section against it: does the app stay inside its region, does anything overflow into a neighbour, does total flash fit the chip? Flag any 越界 with the exact addresses and sizes.
+- **Functional partition boundaries** - take the memory map (bootloader / app / config regions and their address ranges) from the linker script or the engineer, then check every section against it: does the app stay inside its region, does anything overflow into a neighbour, does total flash fit the chip? Flag any overflow with the exact addresses and sizes.
 
 ## 3. Report
 

@@ -11,7 +11,7 @@ Ask the engineer for the problem or decision and what is at stake. Read `.spike-
 
 ## 2. Choose the members and the host
 
-Pick 3-5 expert roles that matter for this question, and designate one of them as the **host** (主理人). For embedded work the usual roles are:
+Pick 3-5 expert roles that matter for this question, and designate one of them as the **host**. For embedded work the usual roles are:
 
 - **architect** - structure, module boundaries, interfaces.
 - **performance** - cycles, latency, deadlines, stack depth, code size.
@@ -37,7 +37,7 @@ Dispatch the members as parallel sub-agents, each with the same question, the sa
 
 1. **Host proposes** - the host states its current solution in full.
 2. **Members propose** - every other member independently writes its own solution to the same question, not merely a critique of the host's.
-3. **Host integrates** - the host reads the members' solutions and revises its own: use them to 反推 (challenge its own assumptions and spot where it is wrong or incomplete), then 补全 (absorb what fills the gaps). Publish the revised solution.
+3. **Host integrates** - the host reads the members' solutions and revises its own: use them to challenge its own assumptions and spot where it is wrong or incomplete, then absorb what fills the gaps. Publish the revised solution.
 4. **Hand the next step to the engineer** - after round 1, do not auto-loop. The host states which points it would still optimize or improve next, and asks the engineer whether to run another round. Continue only when the engineer says so; otherwise converge now. This keeps the meeting from burning tokens and context on repeated discussion.
 
 ## 4. Converge

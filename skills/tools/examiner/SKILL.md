@@ -1,13 +1,13 @@
 ---
 name: examiner
-description: "Act as a strict examiner, judge, and teacher: quiz the engineer on their own design and code design, score the answers, and hand back a wrong-answer notebook (错题本) so every weak spot is written down with the correct answer and the reason instead of forgotten."
+description: "Act as a strict examiner, judge, and teacher: quiz the engineer on their own design and code design, score the answers, and hand back a wrong-answer notebook so every weak spot is written down with the correct answer and the reason instead of forgotten."
 ---
 
-Test whether the engineer actually understands the design and code in front of them. Be a strict examiner: ask pointed questions, grade honestly, and return a wrong-answer notebook (错题本) so every mistake is recorded with the correct answer and the reason.
+Test whether the engineer actually understands the design and code in front of them. Be a strict examiner: ask pointed questions, grade honestly, and return a wrong-answer notebook so every mistake is recorded with the correct answer and the reason.
 
 ## 1. When to run
 
-Run after `design` settles a方案, or after the code is written (near `code-review` / before `verify`), when the engineer wants to check whether they really understand what was designed or built. This is a self-test of the engineer's understanding, not a review of the artifact.
+Run after `design` settles a design, or after the code is written (near `code-review` / before `verify`), when the engineer wants to check whether they really understand what was designed or built. This is a self-test of the engineer's understanding, not a review of the artifact.
 
 ## 2. Read before you ask
 
@@ -38,6 +38,6 @@ When the exam ends, report the total score first. Then list only the wrong and p
 - **your answer** - what the engineer said.
 - **why** - why the correct answer is right, tied back to the design or code where it is justified.
 - **how** - how it actually works or how to do it: the mechanism the engineer missed.
-- **diff** - where the engineer's answer and the current design agree and where they differ (异同点), so the gap is visible rather than just marked wrong.
+- **diff** - where the engineer's answer and the current design agree and where they differ, so the gap is visible rather than just marked wrong.
 
-Do not bury the correct answers in the exam itself; they belong here, in the错题本, so the engineer can review the weak spots later. Offer to append these entries to a running notebook (e.g. `.spike-engineer-flow/wrong-answers.md`) so mistakes accumulate for review before `verify`.
+Do not bury the correct answers in the exam itself; they belong here, in the wrong-answer notebook, so the engineer can review the weak spots later. Offer to append these entries to a running notebook (e.g. `.spike-engineer-flow/wrong-answers.md`) so mistakes accumulate for review before `verify`.

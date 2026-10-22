@@ -56,7 +56,7 @@ Grill and advise on each finding as before.
 
 ## Grill and advise in parallel
 
-After the review, challenge the design back, one round at a time, and pair every question with your own suggestion. For each finding: state the problem, ask the engineer to justify or fix it, and give your concrete optimisation proposal in the same breath. Do not let a weak answer pass: if the justification does not hold, say so and push again, refining your suggestion as the discussion goes. Number your questions and wait for answers, as in interrogate. The engineer may accept your suggestion, push back, or improve on it; the point is拷问 and建议 running side by side, not a one-way interrogation.
+After the review, challenge the design back, one round at a time, and pair every question with your own suggestion. For each finding: state the problem, ask the engineer to justify or fix it, and give your concrete optimisation proposal in the same breath. Do not let a weak answer pass: if the justification does not hold, say so and push again, refining your suggestion as the discussion goes. Number your questions and wait for answers, as in interrogate. The engineer may accept your suggestion, push back, or improve on it; the point is grilling and advice running side by side, not a one-way interrogation.
 
 ## Output
 

@@ -16,7 +16,7 @@ Write `docs/spec.md` (or `docs/spec-<module>.md` for per-module specs). For ever
 - Assign a unique ID: `REQ-<module>-<NNN>` (for example `REQ-CAN-001`, `REQ-BAL-012`).
 - State the requirement in one sentence.
 - State its acceptance criteria: how you will know it is met, observable and measurable.
-- Mark its status as 待设计.
+- Mark its status as `To design`.
 
 Keep each requirement small enough that one test can cover it. Merge or split the engineer's statements as needed, and confirm the split with them.
 
@@ -24,9 +24,9 @@ Keep each requirement small enough that one test can cover it. Merge or split th
 
 Create `docs/traceability.md` with one row per REQ-ID:
 
-| REQ-ID | 需求 | 设计 | 实现 | 测试 | 状态 |
+| REQ-ID | Requirement | Design | Implementation | Test | Status |
 
-Fill the REQ-ID and 需求 columns now. The design, implementation, and test columns are filled by later skills as they reference these IDs.
+Fill the REQ-ID and Requirement columns now. The design, implementation, and test columns are filled by later skills as they reference these IDs.
 
 ## 4. Hand off
 

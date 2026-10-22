@@ -1,5 +1,5 @@
-# 05-review 评审段
+# 05-review — review stage
 
-代码评审。
+Code review.
 
-- **`code-review`**（已落地）：双轴评审——规范（本工程编码标准 + MISRA）+ 规格（逐条 REQ-ID 查实现与测试、对照验收标准），两个子代理并行、并列呈现、不混排；回填 `traceability.md`。
+- **`code-review`** (landed): two-axis review — standard (this project's coding standard + MISRA) + spec (checks the implementation and tests per REQ-ID against the acceptance criteria), two sub-agents in parallel, presented side by side, not mixed; back-fills `traceability.md`.

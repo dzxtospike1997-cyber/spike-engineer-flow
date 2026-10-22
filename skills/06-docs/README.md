@@ -1,5 +1,5 @@
-# 06-docs 文档段
+# 06-docs — documentation stage
 
-文档产出。
+Documentation output.
 
-- **`docs`**（已落地）：从代码 / 设计 / spec 生成文档——datasheet 摘要、寄存器手册、模块说明，保持与代码同步不漂移。
+- **`docs`** (landed): generates documentation from the code / design / spec — datasheet summary, register manual, module notes — keeping it in sync with the code without drifting.
