@@ -27,6 +27,7 @@ Ask the engineer, concisely and one question at a time, what they want to do rig
 | Requirement clear, need a formal spec | `spec` |
 | Need module / peripheral / API design | `design` |
 | Design ready, want it reviewed | `senior-en` (design review) |
+| Design settled, want to split the implementation into small tracked pieces | `pieces` |
 | Want to write a chip driver | `driver-dev` |
 | Want to write application / business logic | `app-logic` |
 | Want to port or refactor a module | `refactor-port` |
@@ -34,6 +35,7 @@ Ask the engineer, concisely and one question at a time, what they want to do rig
 | Want a code-design review before verify | `senior-en` (code review) |
 | Have captured logs / waveforms, want to find a bug or verify logic | `log-analyze` |
 | Want a code review | `code-review` |
+| Want to test whether you actually understand the design or code | `examiner` |
 | Want to write docs | `docs` |
 | Want to commit | `git-commit` |
 | A term or logic is hard to understand | `newbie` |

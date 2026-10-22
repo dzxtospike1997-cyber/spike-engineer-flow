@@ -26,6 +26,7 @@
     "./skills/03-impl/driver-dev",
     "./skills/03-impl/app-logic",
     "./skills/03-impl/refactor-port",
+    "./skills/03-impl/pieces",
     "./skills/04-verify/verify",
     "./skills/04-verify/log-analyze",
     "./skills/04-verify/hw-test",
@@ -36,6 +37,7 @@
     "./skills/tools/git-commit",
     "./skills/tools/measure",
     "./skills/tools/build-flash",
-    "./skills/tools/protocol-tools"
+    "./skills/tools/protocol-tools",
+    "./skills/tools/examiner"
   ]
 }
